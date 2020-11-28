@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="login">
+        <h5>
+          <span style="color: rgb(40, 136, 226); font-size: 30px">G</span
+          ><span style="color: rgb(230, 47, 47)">o</span
+          ><span style="color: rgb(224, 176, 16)">o</span
+          ><span style="color: rgb(40, 136, 226)">g</span
+          ><span style="color: rgb(17, 202, 57)">l</span
+          ><span style="color: rgb(230, 47, 47)">e</span>
+        </h5>
+        <p class="sign-in">Sign in</p>
+        <p class="use-acc">Use your Google Account</p>
+        <div class="form">
+          <form action="#" method="post">
+            <input type="email" name="email" id="email" />
+            <label>Email or phone</label>
+          </form>
+          <a href="#" class="email">Forget email?</a>
+          <p class="guest">
+            Not your computer? Use a Private Window to sign in.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div class="create-acc">
+          <a href="#">Create account</a>
+          <div class="next">Next</div>
+        </div>
+      </div>
+      <div class="login2" style="width: 500px">
+        <h5>
+          <span style="color: rgb(40, 136, 226); font-size: 30px">G</span
+          ><span style="color: rgb(230, 47, 47)">o</span
+          ><span style="color: rgb(224, 176, 16)">o</span
+          ><span style="color: rgb(40, 136, 226)">g</span
+          ><span style="color: rgb(17, 202, 57)">l</span
+          ><span style="color: rgb(230, 47, 47)">e</span>
+        </h5>
+        <p class="sign-in">Welcome</p>
+        <div class="user-email">
+          <i class="fas fa-user-circle"></i>
+          <div class="email-here">sampleemail20@gmail.com</div>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <p class="verify">To continue, first verify that it's you</p>
+        <div class="form">
+          <form action="#" method="post">
+            <input type="password" name="password" />
+            <label>Enter your password</label>
+            <img src="eye.svg" />
+          </form>
+        </div>
+        <div class="create-acc">
+          <a href="#">Forgot password?</a>
+          <div>Next</div>
+        </div>
+      </div>
+      <div class="lower">
+        <div class="select">
+          <span>English (United Kingdom)</span><i class="fas fa-play"></i>
+        </div>
+        <div class="links">
+          <a href="#">Help</a>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const next = document.querySelector(".next");
+      const page1 = document.querySelector(".login");
+      const page2 = document.querySelector(".login2");
+      var email = document.querySelector("#email");
+
+      next.addEventListener("click", displayFunc);
+
+      function displayFunc() {
+        page1.style.display = "none";
+        page2.style.display = "block";
+      }
+    </script>
+  </body>
+</html>
