@@ -2,4 +2,4 @@
 
 This is google's login page clone.
 
-![Screenshot](Screenshot.png)
+![Screenshot](login_page.png)
