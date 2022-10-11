@@ -1,5 +1,5 @@
-# Google-Login-Page
+# google-login-page
 
-This is google's login page clone.
+Google's login page!
 
 ![Screenshot](login_page.png)
